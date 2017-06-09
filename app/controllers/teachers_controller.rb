@@ -1,5 +1,13 @@
 class TeachersController < ApplicationController
-	def create
-	end
-end
+  def new
+  end
 
+  def create
+  end
+
+  def show
+  end
+
+  def list
+  end
+end
