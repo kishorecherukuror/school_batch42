@@ -1,0 +1,22 @@
+<table border=1>
+<tr>
+	<th>Name</th>
+	<th>Age</th>
+	<th>Address</th>
+	<th>Gender</th>
+	<th>Email</th>
+	<th>Hobbies</th>
+</tr>
+
+<% @employees.each do |emp| %>
+<tr>
+	<td><%= emp.name %></td>
+	<td><%= emp.age %></td>
+	<td><%= emp.address %></td>
+	<td><%= emp.gender %></td>
+	<td><%= emp.email %></td>
+	<td><%= emp.hobbies %></td>
+</tr>
+<% end %>
+
+</table>
