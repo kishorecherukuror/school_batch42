@@ -3,8 +3,8 @@ class EmployeesController < ApplicationController
   end
 
   def create
-    @name =  params[:fname]
-    @age = params[:age]
+    @emp = Employee.new(name: params[:fname], age: params[:age])
+    @emp.save    
   end
 
   def show

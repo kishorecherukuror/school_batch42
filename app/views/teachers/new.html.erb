@@ -1,2 +1,9 @@
-<h1>Teachers#new</h1>
-<p>Find me in app/views/teachers/new.html.erb</p>
+<%= form_for @teacher , url: {action: "create"} do |f| %>
+
+<p>Name   : <%= f.text_field  :name%></p>
+<p>Subject: <%= f.text_field :subject %></p>
+<p>Email  : <%= f.email_field :email %></p>
+<p>Gender  : <%= f.radio_button :gender, "Male" %> Male
+			 <%= f.radio_button :gender, "Female" %> Female</p>
+<p><%= f.submit %></p>
+<% end %>

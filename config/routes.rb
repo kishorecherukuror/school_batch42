@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get 'teachers/new'
 
   get 'teachers/create'
+  post 'teachers/create'
 
   get 'teachers/show'
 

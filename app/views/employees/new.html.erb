@@ -4,7 +4,7 @@
 <%= form_tag('/employees/create') do %>
 
 	<p> <%= label_tag 'name' %>
-	 	<%= text_field_tag 'fname', nil, placeholder: 'Enter search term...', maxlength: 15%></p>
+	 	<%= text_field_tag 'fname'%></p>
 
 	<p> <%= label_tag 'age' %>
 		<%= text_field_tag 'age' %></p>
@@ -12,8 +12,3 @@
 	<p><%= submit_tag "Submit" %></p>
 
 <% end %>
-
-<h1>Employee Information</h1>
-
-Name : <%= @name %><br/>
-Age  : <%= @age %>
